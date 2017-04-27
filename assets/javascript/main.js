@@ -106,5 +106,4 @@ function printHTML (html){
 }
 
 
-console.log(tareitas);
 
