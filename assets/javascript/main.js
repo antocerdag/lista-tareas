@@ -96,12 +96,12 @@ function mergeHTML (){
   for (var i=0; i<tareitas.length; i++){
     html += tareitas[i].toHTML();
   }
-  return html;
+  
 }
 
 function printHTML (html){
   records.innerHTML = '';
-  records.innerHTML = html;
+  
 }
 
 
