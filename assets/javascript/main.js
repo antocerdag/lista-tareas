@@ -70,4 +70,14 @@ function addToDo(){
 	input.value = "";
 }
 
+var tareitas = [];
+var records = document.getElementById('records');
+
+// Constructor para generar una nueva tarea
+function Producto(tarea) {
+  this.tarea = tarea.toUpperCase();
+  this.tareaID = (tareitas.length + 1);
+};
+
+
 
