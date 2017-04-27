@@ -74,10 +74,23 @@ var tareitas = [];
 var records = document.getElementById('records');
 
 // Constructor para generar una nueva tarea
-function Producto(tarea) {
+function Tareas(tarea) {
   this.tarea = tarea.toUpperCase();
   this.tareaID = (tareitas.length + 1);
 };
 
+// Cuando hacen click en el boton Add, crea una nueva tarea y la añade al array de tareitas
+var addtarea = document.getElementById('toDoList');
+addtarea.onclick = function() {
+  var nuevatarea  = new Tareas (tarea);
+  productos.push(nuevatarea);
+  printHTML(product.toHTML());
+};
+
+Tareas.prototype.toHTML = function () {
+  var html = '';
+  html += this.tarea.toUpperCase() + '<br>';
+  return html;
+}
 
 
