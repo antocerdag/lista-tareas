@@ -86,10 +86,9 @@ addtarea.onclick = function() {
 };
 
 Tareas.prototype.toHTML = function () {
-  var html = '';
-  html += "<ul><li>" + this.tarea + "<li><ul>";
-  html += "<br>";
-  return html;
+  var nuevatarea = document.getElementById("tareasnuevas");
+  nuevatarea.innerHTML += "<ul><li>" + this.tarea ;
+  
 }
 
 function mergeHTML (){
