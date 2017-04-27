@@ -60,6 +60,10 @@ var tareasJason = [
     "completed": true
   }];
 
+ for (var i = 0; i < 10; i++) {
+	document.write('<ul> <li> ' + tareasJason[i].title + '</li></ul>');
+};
+
 function addToDo(){
 	var input = document.getElementById("toDo");
 
@@ -70,27 +74,40 @@ function addToDo(){
 	input.value = "";
 }
 
-var tareitas = [];
-var records = document.getElementById('records');
 
+
+/*var tareitas = [];
+var records = document.getElementById('records');
+//var input = document.getElementById("toDo");
 // Constructor para generar una nueva tarea
 function Tareas(tarea) {
-  this.tarea = tarea.toUpperCase();
+  this.tarea = tarea;
   this.tareaID = (tareitas.length + 1);
 };
 
 // Cuando hacen click en el boton Add, crea una nueva tarea y la añade al array de tareitas
 var addtarea = document.getElementById('toDoList');
 addtarea.onclick = function() {
+	var tarea = document.getElementById("toDo");
   var nuevatarea  = new Tareas (tarea);
-  productos.push(nuevatarea);
-  printHTML(product.toHTML());
+  tareitas.push(nuevatarea);
+  
+	//Tareas.innerHTML += tarea.value + "<br>";
+	//tarea.value = "";
+
 };
+
 
 Tareas.prototype.toHTML = function () {
   var html = '';
-  html += this.tarea.toUpperCase() + '<br>';
+  html += this.tarea + '<br>';
+  
   return html;
 }
 
+function printHTML (html){
+  records.innerHTML = '';
+  records.innerHTML = html;
+}
+*/
 
